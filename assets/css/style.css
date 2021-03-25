@@ -1,55 +1,152 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   padding: 0;
   margin: 0;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 18px;
-  line-height: 150%;
-  color: #333;
-  background: #efeee7;
+  color: black;
+  background-image: url("../images/pexels-johannes-plenio-1103970.jpg");
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
 }
 
+/* header & nav style */
 header {
-  background: #333;
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly; 
+  flex-direction: row-reverse; 
 }
 
-h1 {
-  padding: 20px 0;
-  margin: 0;
-  margin-bottom: 20px;
-  font-size: 28px;
-  color: #eee;
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  color: #757575;
+  text-shadow: 5px 5px darkgray;
+}
+
+header img {
+  padding: 10px;
+}
+
+header nav  {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul li{
+  padding: 10px 20px;
+  font-size: 25px;
+  list-style: none;
+  display: inline;
+}
+
+header nav ul li a{
+  color: white;
+  text-decoration: none;
+} 
+
+header nav ul li a:hover{
+  color: black;
+  background: lightgray;
+  border-radius: 5px;
+
+}
+
+/* Main Section style */
+.main {
+    display: flex;
+    background: rgb(211,211,211,.8);
+    justify-content: space-between;
+    padding: 10px;
+    margin: 20px;
+    border: 2px solid black;
+}
+
+.main h2 {
   text-align: center;
 }
 
-h2 {
-  font-size: 24px;
+/* Main left Section style */
+.main-left {
+    background: gray;
+    border: 2px solid black;
+    /* instead of doing this width: 30%; */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    color: #424242;
 }
 
-a {
-  color: #d21034;
+.main-left h2 {
+  color: #c5c0c0;
 }
 
-.container {
-  width: 1024px;
-  margin: 0 auto;
+.main-left li {
+  list-style: none;
+  text-align: center;
 }
 
-#main-bio,
-#contact-info,
-#bio-image {
-  float: left;
+.main-left img:hover {
+  background-color: darkgray;
 }
 
-#main-bio {
-  width: 70%;
+.main-left img {
+  height: 30px;
+  width: 30px;
 }
 
-#contact-info {
-  width: 30%;
+.main-left img:hover {
+  background-color: darkgray;
+  border-radius: 10px;
 }
 
-#bio-image {
-  width: 200px;
-  height: 200px;
-  margin-right: 20px;
+/* Main right Section style */
+.main-right {
+    background: white
+    border: 2px solid black;
+    color: white;
+    padding: 10px;
+    /* instead of doing this width: 65%; */
+    flex: 2;
+}
+
+a.highlight {
+  color: #424242;
+}
+
+a.highlight:hover {
+  color: #6c6c6c;
+}
+
+#education {
+  background-color: darkgray;
+  padding: 10px;
+  line-height: 1;
+}
+
+#employment {
+  background-color: lightgray;
+  padding: 10px;
+  line-height: 1;
+}
+
+#reference {
+  background-color: darkgray;
+  padding: 10px;
+  line-height: 1;
 }

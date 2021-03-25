@@ -1,46 +1,191 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Relative Paths</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
-  </head>
+</head>
 
-
-  <body>
+<body>
+    <!-- Header Section -->
     <header>
-      <h1>Student Bio</h1>
+        <div class="header-container">
+            <h1>
+                Chrysler Carreon
+            </h1>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#skill">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#education">Education</a>
+                    </li>
+                    <li>
+                        <a href="#employment">Employment</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                        
+                </ul>
+            </nav>		
+        </div>
+        
+        <img
+        id="bio-image"
+        src="https://placehold.it/200x200" 
+        alt="My Name" />
     </header>
 
-    <div class="container">
-      <section id="main-bio">
-        <h2>Chrysler Carreon</h2>
+    <!-- Main Section -->
+    <section class="main">
+        <div class="main-left">
+            <!-- LEFT SECTION -->
+            <div class="main-left-info">
+                <h2>About me</h2>
+                
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quidem vero, accusantium deleniti dicta repellendus animi sed molestias odio aliquid, magnam ipsum eum quis assumenda sunt! Quisquam voluptates facilis dolor.</p>
+            </div>
 
-        <img
-          id="bio-image"
-          src="./assets/images/myimage.jpeg"
-          alt="Your Name"
-        />
+            <div id="skill" class="main-left-info">
+                <h2>Skills</h2>
+                
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quidem vero, accusantium deleniti dicta repellendus animi sed molestias odio aliquid, magnam ipsum eum quis assumenda sunt! Quisquam voluptates facilis dolor.</p>
+            </div>
+            
+            <div class="main-left-info">
+                <h2>License/Certification</h2>
+                
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quidem vero, accusantium deleniti dicta repellendus animi sed molestias odio aliquid, magnam ipsum eum quis assumenda sunt! Quisquam voluptates facilis dolor.</p>
+            </div>
 
-        <p>
-          I'm currently working with Nexus Flight Operations Services as Flight Dispatcher Supervisor and at the same time im studying Full Stack Web Develeoper at UT. 
-          
-          <!-- LIPSUM
-            Write a short paragraph or two about yourself, or use placeholder text
-          from <a href="http://www.lipsum.com/">www.lipsum.com</a> 
-        -->
-        </p>
-      </section>
+            <div id="contact" class="main-left-info">
+                <h2>Contact</h2>
+                <ul class="contact-info-list">
+                    <li>
+                        Call me:
+                        <a href="tel:+18329338597">
+                            <img src="./assets/images/iconfinder_social_4_492986.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        Email Me:
+                        <a href="mailto:relsyrhc_0810@yahoo.com">
+                            <img src="./assets/images/iconfinder_mail_email_e-mail_letter_5340267.png" alt="email logo">
+                        </a>
+                        
+                    </li>
+                    <li>
+                        My Github:
+                        <a href="https://github.com/relsyrhc0810" target="blank"
+                        ><img src="./assets/images/iconfinder_github_317712.png" alt="Github Logo"></a
+                        >
+                    </li>
+                    
+                    <li>
+                        My LinkIn:
+                        <a
+                        href="https://www.linkedin.com/in/chrysler-carreon-51ba373b"
+                        target="blank"
+                        ><img src="./assets/images/iconfinder_1_Linkedin_unofficial_colored_svg_5296501.png" alt="Linkin Logo"></a
+                        >
+                    </li>
+                    <li><strong>Portfolio:</strong> <a href="#">coming soon</a></li>
+                </ul>
+                
+            </div>
 
-      <section id="contact-info">
-        <h2>Contact Info</h2>
-        <ul>
-          <li><strong>Email:</strong> <a href="mailto:relsyrhc_0810@yahoo.com">relsyrhc_0810@yahoo.com</a></li>
-          <li><strong>Github:</strong> <a href="https://github.com/relsyrhc0810" target="blank">relsyrhc0810</a></li>
-          <li><strong>LinkIn:</strong> <a href="https://www.linkedin.com/in/chrysler-carreon-51ba373b" target="blank">Link in Profile</a> </li>
-          <li><strong>Portfolio:</strong> <a href="#">coming soon</a></li>
-        </ul>
-      </section>
-    </div>
-  </body>
+        </div>
+
+        <div class="main-right">
+            <!-- RIGHT SECTION -->
+            <div id="education" class="main-right-info">
+                <h2>Education</h2>
+                
+                <div>
+                    <h3><a class="highlight" href="https://techbootcamps.utexas.edu/coding/" target="blank">University of Texas - Austin</a></h3>
+                    <p><strong>Coarse: </strong> Wed Development - Current Student</p>
+                    <p><strong>Year Graduated: </strong> March 2020 - On Going Class</p>
+                </div>
+
+                <br><br>
+
+                <div>
+                    <h3><a class="highlight" href="https://www.philsca.edu.ph/">Phillipine State College Of Aeronautics</a></h3>
+                    <p><strong>Coarse: </strong> BS Computer Studies Specialize in Airline Operations</p>
+                    <p><strong>Year Graduated: </strong>March 2003 - June 2007</p>
+                </div>
+               
+            </div>
+
+            <div id="employment" class="main-right-info">
+                <h2>Employment</h2>
+                
+                <h3><a class="highlight" href="https://www.nexus.aero/" target="blank">Nexus Flight Operation Services</a></h3>
+                <p><strong>Position: </strong>Flight Dispacther Supervisor</p>
+                <p><strong>Year: </strong></p>
+                <p><strong>Duties & Responsibilities: </strong></p>
+                <p>
+                    <ul>
+                        <li>1</li>
+                        <li>1</li>
+                        <li>1</li>
+                    </ul>
+                </p>
+                
+                <br><br>
+
+                <h3><a class="highlight" href="https://www.nexus.aero/" target="blank">Nexus Flight Operation Services</a></h3>
+                <p><strong>Position: </strong>Senior Flight Dispacther</p>
+                <p><strong>Year: </strong></p>
+                <p><strong>Duties & Responsibilities: </strong></p>
+                <p>
+                    <ul>
+                        <li>1</li>
+                        <li>1</li>
+                        <li>1</li>
+                    </ul>
+                </p>
+
+                <br><br>
+
+                <h3><a class="highlight" href="#" target="blank">MIASCOR Clark</a></h3>
+                <p><strong>Position: </strong>Passenger Service Agent</p>
+                <p><strong>Year: </strong></p>
+                <p><strong>Duties & Responsibilities: </strong></p>
+                <p>
+                    <ul>
+                        <li>1</li>
+                        <li>1</li>
+                        <li>1</li>
+                    </ul>
+                </p>
+                
+            </div>
+
+            <div id="reference" class="main-right-info">
+                <h2>Character Reference</h2>
+
+                <h3>Reference 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia a totam excepturi necessitatibus pariatur nesciunt omnis illo animi. Corrupti neque ullam repudiandae quas consequuntur repellat optio dolor iure ea nulla.</p>
+
+                <h3>Reference 2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia a totam excepturi necessitatibus pariatur nesciunt omnis illo animi. Corrupti neque ullam repudiandae quas consequuntur repellat optio dolor iure ea nulla.</p>
+    
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, cum unde, qui earum quas illum, magnam omnis vel nam mollitia repudiandae in veritatis quibusdam voluptas eaque eligendi provident. Soluta, rerum.</p>
+
+    </footer>
+    
+</body>
 </html>
