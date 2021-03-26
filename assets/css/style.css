@@ -1,3 +1,12 @@
+ :root {
+  --gray: #808080;
+  --darkgray: #A9A9A9;
+  --lightgray: #D3D3D3;
+  --dimgray: #696969;
+  --black: #000;
+  --white: #fff;
+} 
+
 * {
   box-sizing: border-box;
 }
@@ -7,7 +16,7 @@ body {
   margin: 0;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 18px;
-  color: black;
+  color: #000;
   background-image: url("../images/pexels-johannes-plenio-1103970.jpg");
   background-size: cover;
   background-position: center; 
@@ -19,7 +28,7 @@ header {
   display: flex;
   align-content: center;
   justify-content: space-evenly; 
-  flex-direction: row-reverse; 
+  flex-direction: row-reverse;
 }
 
 .header-container {
@@ -31,12 +40,27 @@ header {
 }
 
 header h1 {
-  color: #757575;
-  text-shadow: 5px 5px darkgray;
+  color: #696969;
+  text-shadow: 5px 5px 5px #A9A9A9;
 }
 
 header img {
   padding: 10px;
+}
+
+#bio-image:hover {
+  position:relative;
+  top:-25px;
+  left:-35px;
+  width:300px;
+  height:auto;
+  display:block;
+  opacity: 0.7;
+  z-index:999;
+}
+
+#bio-image {
+  box-shadow: 10px 10px 5px #D3D3D3;
 }
 
 header nav  {
@@ -54,13 +78,13 @@ header nav ul li{
 }
 
 header nav ul li a{
-  color: white;
+  color: #fff;
   text-decoration: none;
 } 
 
 header nav ul li a:hover{
-  color: black;
-  background: lightgray;
+  color: #000;
+  background: #D3D3D3;
   border-radius: 5px;
 
 }
@@ -68,11 +92,12 @@ header nav ul li a:hover{
 /* Main Section style */
 .main {
     display: flex;
-    background: rgb(211,211,211,.8);
+    /* adjust the opacity of the backgorund */
+    /* background: rgb(211,211,211,.3); */
     justify-content: space-between;
-    padding: 10px;
-    margin: 20px;
-    border: 2px solid black;
+    padding-top: 20px;
+    margin: 10px;
+    /* border: 2px solid #000; */
 }
 
 .main h2 {
@@ -81,8 +106,9 @@ header nav ul li a:hover{
 
 /* Main left Section style */
 .main-left {
-    background: gray;
-    border: 2px solid black;
+    background-image: url("../images/paper.jpg");
+    background-size: cover;
+    background-position: center;
     /* instead of doing this width: 30%; */
     flex: 1;
     display: flex;
@@ -92,8 +118,13 @@ header nav ul li a:hover{
     color: #424242;
 }
 
+#career-objectives p::first-letter {
+  font-size: 200%;
+
+}
+
 .main-left h2 {
-  color: #c5c0c0;
+  color: #2F4F4F;
 }
 
 .main-left li {
@@ -102,51 +133,115 @@ header nav ul li a:hover{
 }
 
 .main-left img:hover {
-  background-color: darkgray;
+  background-color: #A9A9A9;
+  opacity: 1;
 }
 
 .main-left img {
   height: 30px;
   width: 30px;
+  opacity: 0.7;
 }
 
 .main-left img:hover {
-  background-color: darkgray;
+  background-color: #A9A9A9;
   border-radius: 10px;
 }
 
 /* Main right Section style */
 .main-right {
-    background: white
-    border: 2px solid black;
-    color: white;
+    /* border: 2px solid black; */
+    color: #000;
     padding: 10px;
     /* instead of doing this width: 65%; */
     flex: 2;
 }
 
 a.highlight {
-  color: #424242;
+  color: #2F4F4F;
 }
 
 a.highlight:hover {
-  color: #6c6c6c;
+  color: #A9A9A9;
 }
 
 #education {
-  background-color: darkgray;
-  padding: 10px;
+  background-image: url("../images/propel.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: all 1s ease-in-out;
   line-height: 1;
+  padding: 10px;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+#education:hover {
+  background-image: url("../images/WebDesign.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: all 1s ease-in-out;
 }
 
 #employment {
-  background-color: lightgray;
+  /* background-color: #D3D3D3; */
+  background-image: url("../images/aviation2.jpg");
   padding: 10px;
   line-height: 1;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 5px;
+}
+
+#employment:hover {
+  opacity: .7;
 }
 
 #reference {
-  background-color: darkgray;
+  background-image: url("../images/note.jpg");
   padding: 10px;
   line-height: 1;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+  margin-bottom: 5px;
+}
+
+#reference:hover {
+  background-image: url("../images/note2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#reference:hover {
+  opacity: 200%;
+}
+
+footer p{
+  text-align: right;
+  padding-right: 20px;
+  color: #fff;
+}
+
+@media screen and (max-width: 980px) {
+
+  header {
+    /* this will be applied on any screen smaller than 980px */
+    flex-direction: column-reverse;
+  }
+
+  header img {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
 }
