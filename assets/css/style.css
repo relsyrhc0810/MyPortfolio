@@ -1,11 +1,11 @@
- :root {
+:root {
   --gray: #808080;
-  --darkgray: #A9A9A9;
-  --lightgray: #D3D3D3;
-  --dimgray: #696969;
+  --darkgray: #a9a9a9;
+  --lightgray: #d3d3d3;
+  --darkslategray: #2f4f4f;
   --black: #000;
   --white: #fff;
-} 
+}
 
 * {
   box-sizing: border-box;
@@ -14,90 +14,83 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Roboto, Georgia, "Times New Roman", Times, serif;
   font-size: 18px;
-  color: #000;
-  background-image: url("../images/pexels-johannes-plenio-1103970.jpg");
-  background-size: cover;
-  background-position: center; 
-  background-repeat: no-repeat;
+  color: var(--black);
 }
 
-/* header & nav style */
+/* header style */
 header {
   display: flex;
-  align-content: center;
-  justify-content: space-evenly; 
-  flex-direction: row-reverse;
-}
-
-.header-container {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
   flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  background-color: var(--darkgray);
 }
 
 header h1 {
-  color: #696969;
-  text-shadow: 5px 5px 5px #A9A9A9;
+    text-shadow: 5px 5px 5px var(--darkslategray); 
+    font-family: roboto;
 }
 
-header img {
-  padding: 10px;
-}
-
-#bio-image:hover {
-  position:relative;
-  top:-25px;
-  left:-35px;
-  width:300px;
-  height:auto;
-  display:block;
-  opacity: 0.7;
-  z-index:999;
-}
-
-#bio-image {
-  box-shadow: 10px 10px 5px #D3D3D3;
-}
-
-header nav  {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header nav ul li{
+header nav ul li {
   padding: 10px 20px;
   font-size: 25px;
   list-style: none;
   display: inline;
 }
 
-header nav ul li a{
-  color: #fff;
+header nav ul li a {
   text-decoration: none;
-} 
+  color: white;
+}
 
-header nav ul li a:hover{
-  color: #000;
-  background: #D3D3D3;
+header nav ul li a:hover {
+  color: gray;
+  border: 1px solid gray;
   border-radius: 5px;
+}
 
+/* hero section start here */
+
+.hero-image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.hero-message {
+  transition: 1s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%); */
+  transform: translate(-50%, -50%);
+}
+
+.hero-container:hover .hero-image {
+  opacity: 0.3;
+}
+
+.hero-container:hover .hero-message {
+  opacity: 1;
+}
+
+.message {
+  color: var(--black);
+  font-size: 25px;
 }
 
 /* Main Section style */
 .main {
-    display: flex;
-    /* adjust the opacity of the backgorund */
-    /* background: rgb(211,211,211,.3); */
-    justify-content: space-between;
-    padding-top: 20px;
-    margin: 10px;
-    /* border: 2px solid #000; */
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
 }
 
 .main h2 {
@@ -106,25 +99,35 @@ header nav ul li a:hover{
 
 /* Main left Section style */
 .main-left {
-    background-image: url("../images/paper.jpg");
-    background-size: cover;
-    background-position: center;
-    /* instead of doing this width: 30%; */
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-    color: #424242;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: flex-start;
+  text-align: justify;
+  background-color: var(--lightgray);
+  color: var(--darkslategray);
+  border-radius: 10px;
+  padding: 10px;
 }
 
 #career-objectives p::first-letter {
   font-size: 200%;
-
 }
 
 .main-left h2 {
-  color: #2F4F4F;
+  color: black;
+}
+
+#career-objectives {
+  padding: 0 10% 30% 10%;
+}
+
+#skill {
+  padding-bottom: 30%;
+}
+
+#licensed {
+  padding: 0 10% 30% 10%;
 }
 
 .main-left li {
@@ -132,116 +135,92 @@ header nav ul li a:hover{
   text-align: center;
 }
 
-.main-left img:hover {
-  background-color: #A9A9A9;
-  opacity: 1;
-}
-
 .main-left img {
-  height: 30px;
-  width: 30px;
+  height: 75px;
+  width: 75px;
   opacity: 0.7;
+  padding: 5px;
 }
 
 .main-left img:hover {
-  background-color: #A9A9A9;
+  background-color: var(--darkgray);
+  opacity: 1;
   border-radius: 10px;
 }
 
 /* Main right Section style */
 .main-right {
-    /* border: 2px solid black; */
-    color: #000;
-    padding: 10px;
-    /* instead of doing this width: 65%; */
-    flex: 2;
+  color: var(--black);
+  padding: 10px;
+  /* instead of doing this width: 65%; */
+  flex: 2;
 }
 
 a.highlight {
-  color: #2F4F4F;
+  color: var(--darkslategray);
 }
 
 a.highlight:hover {
-  color: #A9A9A9;
+  color: var(--lightgray);
 }
 
-#education {
-  background-image: url("../images/propel.jpg");
-  background-size: cover;
-  background-position: center;
-  transition: all 1s ease-in-out;
+#education, #reference {
+  background-color: var(--darkgray);
   line-height: 1;
+  color: var(--white);
   padding: 10px;
-  color: #000;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  border-radius: 10px;
 }
 
-#education:hover {
-  background-image: url("../images/WebDesign.jpg");
-  background-size: cover;
-  background-position: center;
-  transition: all 1s ease-in-out;
+#education:hover, #reference:hover {
+    background-color: rgb(169, 169, 169, .8);
 }
 
-#employment {
-  /* background-color: #D3D3D3; */
-  background-image: url("../images/aviation2.jpg");
+#employment{
+  background-color: var(--lightgray);
   padding: 10px;
   line-height: 1;
-  background-size: cover;
-  background-position: center;
   margin-bottom: 5px;
+  border-radius: 10px;
 }
 
-#employment:hover {
-  opacity: .7;
+#employment:hover, .main-left:hover {
+    background-color: rgb(211,211,211, 0.8);
+
 }
 
-#reference {
-  background-image: url("../images/note.jpg");
-  padding: 10px;
-  line-height: 1;
-  background-size: cover;
-  background-position: center;
-  opacity: 0.7;
-  margin-bottom: 5px;
-}
+/* footer start here */
 
-#reference:hover {
-  background-image: url("../images/note2.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-#reference:hover {
-  opacity: 200%;
-}
-
-footer p{
+footer p {
   text-align: right;
   padding-right: 20px;
-  color: #fff;
+  color: var(--darkslategray);
+  text-shadow: 2px 2px 2px var(--gray); 
 }
 
 @media screen and (max-width: 980px) {
-
   header {
     /* this will be applied on any screen smaller than 980px */
-    flex-direction: column-reverse;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-
-  header img {
-    width: 150px;
-    height: 150px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto; 
-  }
-
 }
 
 @media screen and (max-width: 768px) {
   .main {
     flex-direction: column;
   }
+
+  .main-left {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  footer p{
+      text-align: center;
+  }
+
 }
