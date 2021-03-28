@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Encode Sans Semi Condensed
+- Font Author: Copyright 2012 The Encode Project Authors (impallari@gmail.com), with Reserved Font Name "Encode Sans".
+- Font Source: http://fonts.gstatic.com/s/encodesanssemicondensed/v5/3qT4oiKqnDuUtQUEHMoXcmspmy55SFWrXFRp9FTOG2yR_sVPRsjp.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL)

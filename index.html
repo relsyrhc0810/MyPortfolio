@@ -9,18 +9,28 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,400i,500,500i,700,900" />
     
 
+    <!-- this is the Link for FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/images/favicon/site.webmanifest">
+
+
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
-    <title>Document</title>
+    <title>My Very First Portfolio</title>
 </head>
 
-<body>
+<body  id="home">
     <!-- Head Section -->
-    <header>
+    <header class="sticky">
         <h1>
             Chrysler C.
         </h1>
         <nav>
             <ul>
+                <li>
+                    <a href="#home">Home</a>
+                </li>
                 <li>
                     <a href="#education">Education</a>
                 </li>
@@ -31,12 +41,16 @@
                     <a href="#skill">Skills</a>
                 </li>
                 <li>
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+                <li>
                     <a href="#contact">Contact</a>
                 </li>
                     
             </ul>
         </nav>
     </header>
+
 
     <!-- Hero Section -->
     <section class="hero-container">
@@ -45,10 +59,9 @@
           <div class="message">Hi, I'm Chrysler. I will change this image soon.</div>
         </div>
     </section>
-    
 
     <!-- Main Section -->
-    <section class="main">
+    <main class="main">
         <div class="main-left">
             <!-- LEFT SECTION -->
             <div id="career-objectives" class="main-left-info">
@@ -60,9 +73,9 @@
             <div id="skill" class="main-left-info skill">
                 <h2>Skills</h2>
                 <ul>
-                    <li><img src="./assets/images/iconfinder_10-html5_104494.png" alt=""> HTML</li>
+                    <li><img src="./assets/images/iconfinder_10-html5_104494.png" alt="Html5 logo"></li>
                     <br><br>
-                    <li><img src="./assets/images/iconfinder_badge-css-3_317756.png" alt=""> CSS</li>
+                    <li><img src="./assets/images/iconfinder_badge-css-3_317756.png" alt="CSS Logo"></li>
                     <li></li>
                 </ul>
             </div>
@@ -80,20 +93,20 @@
                     <li>
                         Call me:
                         <a href="tel:+18329338597">
-                            <img src="./assets/images/iconfinder_social_4_492986.png" alt="">
+                            <img src="./assets/images/iconfinder_social_4_492986.png" alt="Mobile icon">
                         </a>
                     </li>
                     <li>
                         Email Me:
                         <a href="mailto:relsyrhc_0810@yahoo.com">
-                            <img src="./assets/images/iconfinder_mail_email_e-mail_letter_5340267.png" alt="email logo">
+                            <img src="./assets/images/iconfinder_mail_email_e-mail_letter_5340267.png" alt="email icon">
                         </a>
                         
                     </li>
                     <li>
                         My Github:
                         <a href="https://github.com/relsyrhc0810" target="blank"
-                        ><img src="./assets/images/iconfinder_github_317712.png" alt="Github Logo"></a
+                        ><img src="./assets/images/iconfinder_github_317712.png" alt="Github icon"></a
                         >
                     </li>
                     
@@ -102,7 +115,7 @@
                         <a
                         href="https://www.linkedin.com/in/chrysler-carreon-51ba373b"
                         target="blank"
-                        ><img src="./assets/images/iconfinder_1_Linkedin_unofficial_colored_svg_5296501.png" alt="Linkin Logo"></a
+                        ><img src="./assets/images/iconfinder_1_Linkedin_unofficial_colored_svg_5296501.png" alt="LinkedIn Logo"></a
                         >
                     </li>
                     <li><strong>Portfolio:</strong> <a href="#">coming soon</a></li>
@@ -114,7 +127,7 @@
 
         <div class="main-right">
             <!-- RIGHT SECTION -->
-            <div id="education" class="main-right-info gray-bg">
+            <div id="education" class="main-right-info">
                 <h2>Education</h2>
                 
                 <div>
@@ -133,12 +146,12 @@
                
             </div>
 
-            <div id="employment" class="main-right-info white-bg">
+            <div id="employment" class="main-right-info">
                 <h2>Employment</h2>
                 
                 <h3><a class="highlight" href="https://www.nexus.aero/" target="blank">Nexus Flight Operation Services</a></h3>
                 <p><strong>Position: </strong>Flight Dispacther Supervisor</p>
-                <p><strong>Year: </strong></p>
+                <p><strong>Year: </strong>2015 - Present</p>
                 <p><strong>Duties & Responsibilities: </strong></p>
                 <p>
                     <ul>
@@ -157,7 +170,7 @@
 
                 <h3><a class="highlight" href="https://www.nexus.aero/" target="blank">Nexus Flight Operation Services</a></h3>
                 <p><strong>Position: </strong>Senior Flight Dispacther</p>
-                <p><strong>Year: </strong></p>
+                <p><strong>Year: </strong>2010 - 2015</p>
                 <p><strong>Duties & Responsibilities: </strong></p>
                 <p>
                     <ul>
@@ -196,18 +209,47 @@
                 
             </div>
 
-            <div id="reference" class="main-right-info gray-bg">
-                <h2>Character Reference</h2>
+            <div id="portfolio" class="main-right-info">
+                <div class="portfolio-container">
+                    <h2 class="portfolio-title">Portfolio</h2>
 
-                <h3>Reference 1</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia a totam excepturi necessitatibus pariatur nesciunt omnis illo animi. Corrupti neque ullam repudiandae quas consequuntur repellat optio dolor iure ea nulla.</p>
+                    <div class="portfolio-projects">
+                        <div id="project1" class="project">
+                            <h3>Project 1</h3>
+                            <div class="project-info">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam accusantium totam 
+                            </div>
+                        </div>
 
-                <h3>Reference 2</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia a totam excepturi necessitatibus pariatur nesciunt omnis illo animi. Corrupti neque ullam repudiandae quas consequuntur repellat optio dolor iure ea nulla.</p>
-    
+                        <div id="project2" class="project">
+                            <h3>project 2</h3>
+                            <div class="project-info">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti provident qui doloremque quo at sit 
+                            </div>
+                        </div>
+
+                        <div id="project3" class="project">
+                            <h3>project 3</h3>
+                            <div class="project-info">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus in suscipit, culpa sequi debitis iure ad obis? Quia error voluptatem cum et?
+                            </div>
+                        </div>
+
+                        <div id="project4" class="project">
+                            <h3>project 4</h3>
+                            <div class="project-info">
+                                Lorem ipsum dolor sit amet consectetur adipisicing 
+                            </div>
+                        </div>
+
+                        
+
+                    </div>
+
+                </div>
             </div>
         </div>
-    </section>
+    </main>
 
     <!-- Footer Section -->
     <footer>
