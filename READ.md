@@ -25,4 +25,4 @@ THEN I am presented with a responsive layout that adapts to my viewport
 ### Mock-Up
 My very first Portfolio Website
 
-<img src="./assets/images/myportfolio.png" width="" heigth="">
+<img src="./assets/images/myportfolio2.png" width="" heigth="">
