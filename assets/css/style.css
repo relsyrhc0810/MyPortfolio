@@ -20,20 +20,16 @@ body {
   color: var(--black);
 }
 
-/* header style */
-header.sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  z-index: 999;
-}
-
 header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   background-color: rgb(169, 169, 169, 1);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 header h1 {
@@ -122,23 +118,21 @@ header nav ul li a:hover {
 }
 
 #AboutMe p::first-letter {
-  font-size: 200%;
+  font-size: 30px;
 }
 
 .main-left h2 {
   color: black;
 }
 
-#AboutMe {
+#AboutMe, #licensed {
   padding: 0 10% 30% 10%;
+  scroll-margin-top: 4.5em;
 }
 
 #skill {
   padding-bottom: 30%;
-}
-
-#licensed {
-  padding: 0 10% 30% 10%;
+  scroll-margin-top: 4.5em;
 }
 
 .main-left li {
@@ -191,10 +185,17 @@ a.highlight:hover {
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 10px;
+  scroll-margin-top: 4.5em;
+}
+
+#contact{
+  scroll-margin-top: 4.5em;
 }
 
 #education:hover,
-#portfolio:hover {
+#portfolio:hover,
+#employment:hover,
+.main-left:hover  {
   background-color: rgb(169, 169, 169, 0.8);
 }
 
@@ -204,11 +205,7 @@ a.highlight:hover {
   line-height: 1;
   margin-bottom: 5px;
   border-radius: 10px;
-}
-
-#employment:hover,
-.main-left:hover {
-  background-color: rgb(211, 211, 211, 0.8);
+  scroll-margin-top: 4.5em;
 }
 
 a.resume {
@@ -271,20 +268,14 @@ a.portfolio-link:active {
   transition: all 1s ease-in-out;
 }
 
-#project1,
-#project2,
-#project3,
-#project4 {
+.project{
   position: relative;
   background-size: cover;
   background-position: center;
   border-radius: 10px;
 }
 
-#project1::before,
-#project2::before,
-#project3::before,
-#project4::before {
+.project::before{
   content: "";
   position: absolute;
   top: 0;
@@ -295,41 +286,33 @@ a.portfolio-link:active {
   border-radius: 10px;
 }
 
-.project1-info,
-.project2-info,
-.project3-info,
-.project4-info {
+.project-info {
   position: relative;
 }
 
+
 #project1:hover::before {
-  content: "";
   background-image: url("../images/pexels-pixabay-355952.jpg");
+}
+
+#project4:hover::before {
+  background-image: url("../images/WebDesign2.jpg");
+}
+
+#project1:hover::before,
+#project4:hover::before  {
+  content: "";
   background-size: cover;
   background-position: center;
   position: absolute;
+  transition: all 1s ease-in-out;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
   opacity: 0.7;
   border-radius: 10px;
-}
-
-#project4:hover::before {
-  content: "";
-  position: absolute;
-  background-image: url("../images/WebDesign2.jpg");
-  background-size: cover;
-  background-position: center;
-  transition: all 1s ease-in-out;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  opacity: 1;
   font-weight: bold;
-  border-radius: 10px;
 }
 
 /* footer start here */
