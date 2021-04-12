@@ -251,16 +251,16 @@ a.portfolio-link:active {
 }
 
 #project1 {
-  background-image: url("../images/pexels-nic-wood-6432109.jpg");
-  transition: all 1s ease-in-out;
+  background-image: url("../images/rubBuddy.jpg");
 }
 
 #project2 {
-  background-image: url("../images/pexels-markus-spiske-4383298.jpg");
+  background-image: url("../images/horiseonWebsite.jpg");
 }
 
 #project3 {
   background-image: url("../images/pexels-pixabay-373543.jpg");
+  transition: all 1s ease-in-out;
 }
 
 #project4 {
@@ -291,7 +291,7 @@ a.portfolio-link:active {
 }
 
 
-#project1:hover::before {
+#project3:hover::before {
   background-image: url("../images/pexels-pixabay-355952.jpg");
 }
 
@@ -299,7 +299,7 @@ a.portfolio-link:active {
   background-image: url("../images/WebDesign2.jpg");
 }
 
-#project1:hover::before,
+#project3:hover::before,
 #project4:hover::before  {
   content: "";
   background-size: cover;
